@@ -1,0 +1,14 @@
+[project]
+name = "siteingest"
+version = "0.1.0"
+description = "Host static site and monetize it with built-in ad banners."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.13.4",
+    "flask>=3.1.1",
+    "flask-cors>=6.0.1",
+    "python-dotenv>=1.1.1",
+    "requests>=2.32.4",
+    "waitress>=3.0.2",
+]
