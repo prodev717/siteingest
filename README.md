@@ -79,3 +79,10 @@ POCKETBASE_URL=http://127.0.0.1:8090
 Use the `startup.bat` file (Windows) or run manually:
 
 ---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
