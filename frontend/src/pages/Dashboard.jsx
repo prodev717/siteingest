@@ -36,7 +36,7 @@ function Dashboard() {
 
             const impressionsArray = await pb.collection("impressions").getFullList();
 
-            // ✅ Only include impressions for sites owned by the user
+            // Only include impressions for sites owned by the user
             const siteIds = data.map(site => site.siteid);
             const filteredImpressions = impressionsArray.filter(item =>
                 siteIds.includes(item.siteid)
@@ -65,7 +65,7 @@ function Dashboard() {
             formData.append("token", pb.authStore.token);
             formData.append("siteid", siteid);
 
-            const res = await fetch(urls.microservice_url+"/delete", {
+            const res = await fetch(urls.microservice_url + "/delete", {
                 method: "POST",
                 body: formData,
             });

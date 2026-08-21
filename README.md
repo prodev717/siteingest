@@ -24,7 +24,7 @@ SiteIngest is a fullstack SaaS application that lets users host their websites w
 | -------- | ---------------------------------- |
 | Frontend | React + Bootstrap                  |
 | Backend  | Flask (Microservice)               |
-| Database + OAuth | PocketBase                         |
+| Database + OAuth | PocketBase (v0.28.4)                         |
 | Hosting  | Not deployed yet (VPS coming soon) |
 
 ---
@@ -55,7 +55,7 @@ cd frontend
 npm install
 ```
 
-### 3. Install & Run PocketBase
+### 3. Install & Run PocketBase (v0.28.4)
 
 Download PocketBase from [https://pocketbase.io](https://pocketbase.io)
 Extract and run the server:

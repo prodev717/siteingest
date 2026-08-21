@@ -53,11 +53,11 @@ function Upload() {
       formData.append("file", zipFile);
       formData.append("token", pb.authStore.token);
 
-      const res = await fetch(urls.microservice_url+"/deploy", {
+      const res = await fetch(urls.microservice_url + "/deploy", {
         method: "POST",
         body: formData
       });
-      
+
       console.log(res);
       const result = await res.json();
       if (!res.ok) throw new Error(result.detail || "Deploy failed");
@@ -88,7 +88,7 @@ function Upload() {
         {/* SECTION 1: Site Name */}
         <div className="mb-4">
           <label htmlFor="siteid" className="form-label fw-semibold">
-            1️⃣ Choose a Subdomain
+            1️. Choose a Subdomain
           </label>
           <input
             type="text"
@@ -120,7 +120,7 @@ function Upload() {
 
         {/* SECTION 2: Upload File */}
         <div className="mb-4">
-          <label className="form-label fw-semibold">2️⃣ Upload .zip File</label>
+          <label className="form-label fw-semibold">2️. Upload .zip File</label>
           <input
             type="file"
             accept=".zip"
@@ -133,7 +133,7 @@ function Upload() {
 
         {/* SECTION 3: Deploy */}
         <div className="mb-4">
-          <label className="form-label fw-semibold">3️⃣ Deploy</label>
+          <label className="form-label fw-semibold">3️. Deploy</label>
           <br />
           <button
             className="btn btn-success"
